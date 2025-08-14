@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title class="title">WUKONG</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="dark" class="ion-padding">
+  <div class="container">
+    <!-- Imagen desde URL -->
+    <div class="image-wrapper">
+      <img 
+        [src]="wukongImageUrl" 
+        alt="Wukong Legendario" 
+        class="wukong-image"
+        [class.loaded]="imageLoaded"
+        (load)="onImageLoad()"
+        (error)="handleImageError()"
+      >
+      <div *ngIf="!imageLoaded" class="image-placeholder">
+        <ion-spinner color="light"></ion-spinner>
+      </div>
+    </div>
+
+    <!-- Título -->
+    <h1 class="heading">Comienza tu viaje</h1>
+    
+    <!-- Tarjeta -->
+    <ion-card class="card">
+      <ion-card-content>
+        <p class="quote">"El camino del héroe comienza con un solo paso..."</p>
+      </ion-card-content>
+    </ion-card>
+    
+    <!-- Botón -->
+    <ion-button 
+      expand="block" 
+      fill="solid" 
+      color="medium" 
+      (click)="goToTab2()" 
+      class="action-button"
+    >
+      <ion-icon name="arrow-forward-circle" slot="start"></ion-icon>
+      Explorar
+    </ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "parcialyubis",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

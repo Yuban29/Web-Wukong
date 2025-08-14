@@ -1,0 +1,58 @@
+.wukong-tabs {
+  --background: #121212;
+  border-top: 1px solid rgba(255, 215, 0, 0.1);
+  height: 60px;
+
+  .tab-button {
+    --color: #b0b0b0;
+    --color-selected: #FFD700;
+    overflow: visible;
+    position: relative;
+
+    .tab-icon {
+      transition: all 0.3s ease;
+      ion-icon {
+        font-size: 1.6rem;
+      }
+    }
+
+    ion-label {
+      font-size: 0.7rem;
+      margin-top: 4px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .wukong-indicator {
+      position: absolute;
+      top: 0;
+      width: 40px;
+      height: 3px;
+      background: #FFD700;
+      border-radius: 0 0 3px 3px;
+      opacity: 0;
+      transition: all 0.3s ease;
+      filter: drop-shadow(0 0 3px rgba(255, 215, 0, 0.7));
+    }
+  }
+
+  ion-tab-button.tab-selected {
+    .tab-icon {
+      transform: translateY(-8px) scale(1.1);
+      ion-icon {
+        color: #FFD700;
+        filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.5));
+      }
+    }
+
+    ion-label {
+      color: #FFD700;
+      transform: scale(1.05);
+    }
+
+    .wukong-indicator {
+      opacity: 1;
+      width: 60px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.legend-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wukong-icon {
+  font-size: 4rem;
+  margin: 1rem 0;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.legend-title {
+  color: #f5f5f5;
+  font-weight: 300;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+}
+
+.creator-card {
+  --background: #1e1e1e;
+  border: 1px solid rgba(255, 215, 0, 0.1);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+
+  ion-card-header {
+    padding-bottom: 0;
+  }
+
+  ion-card-title {
+    color: #b0b0b0;
+    font-size: 1.1rem;
+  }
+}
+
+.creator-name {
+  color: #FFD700;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.creator-subtitle {
+  color: #b0b0b0;
+  font-style: italic;
+}
+
+.epic-quote {
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+  border-left: 2px solid #FFD700;
+  padding-left: 1rem;
+  margin-top: 2rem;
+}
