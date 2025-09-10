@@ -204,7 +204,7 @@ Ver el archivo [LICENSE](LICENSE) para más detalles.
 
 <div align="center">
 
-**Desarrollado con 💛 por Yuban Hilarion**
+**Desarrollado con 💙 por Yuban Hilarion**
 
 *"Que el poder del Rey Mono guíe tu código"* 🐉✨
 
